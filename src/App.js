@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './styles/glitch.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+
+    <h1 class="glitch-header" title="Escape it!">Escape!</h1>
+        <div class="button-wrapper">
+           {/* temp redirect */}
+            <a href="pages/about.html" class="menu-button-start glitch" data-text="New Game" onclick="newGame();">
+                New game</a>
+            <a href="#" class="menu-button-start glitch" onclick="loadGame();" data-text="Load Game">
+                Load game</a>
+            <a href="#" class="menu-button-start glitch" onclick="help();" data-text="HELP">
+                Help
+            </a>
+            {/* <!-- <a href="#leaderboards" class="menu-button-start" >
+                    The ones that escaped
+                </a> --> */}
+        </div>
+
+
     </div>
   );
 }

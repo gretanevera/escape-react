@@ -1,0 +1,123 @@
+/*
+  (TEXT) PARAMS
+  =================
+  1. Namespace
+  2. Intensity
+  3. Text color
+  4. Background color (flat)
+  5. Highlight #1 color
+  6. Highlight #2 color
+  7. Width (px)
+  8. Height (px)
+*/
+
+@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
+  
+   position: relative;
+  $steps: $intensity;
+  
+  // Ensure the @keyframes are generated at the root level
+  @at-root {
+    // We need two different ones
+    @for $i from 1 through 2 {
+      @keyframes #{$name}-anim-#{$i} {
+        @for $i from 0 through $steps {
+          $top: random(100);
+          $bottom: random(101 - $top);
+          #{percentage($i*(1/$steps))} {
+            clip-path: inset(#{$top}% 0 #{$bottom}% 0);
+          }
+        }
+      }
+    }
+  }
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // background: $background;
+  }
+  &::after {
+    left: 2px;
+    text-shadow: -1px 0 $highlightColor1;
+    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
+  }
+  &::before {
+    left: -2px;
+    text-shadow: 2px 0 $highlightColor2; 
+    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+  }
+}
+
+.glitch:hover {
+  // font-size: 100px;
+  @include textGlitch("glitch", 50, red, none, red, violet, 450, 115);
+}
+
+//todo: rewrite main.css and secondary.css so Scss. Make a glitchy bg for main.
+
+
+//header glitch. does not fot the esthetics. Recycle elsewhere
+
+
+
+// @keyframes glitchh1{
+//   2%,64%{
+//     transform: translate(2px,0) skew(0deg);
+//   }
+//   4%,60%{
+//     transform: translate(-2px,0) skew(0deg);
+//   }
+//   62%{
+//     transform: translate(0,0) skew(5deg); 
+//   }
+// }
+
+// .glitch-header:before,
+// .glitch-header:after{
+//   content: attr(title);
+//   position: absolute;
+//   left: 0;
+// }
+
+// .glitch-header:before{
+//   animation: glitchTop 1s linear infinite;
+//   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+//   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+// }
+
+// @keyframes glitchTop{
+//   2%,64%{
+//     transform: translate(2px,-2px);
+//   }
+//   4%,60%{
+//     transform: translate(-2px,2px);
+//   }
+//   62%{
+//     transform: translate(13px,-1px) skew(-13deg); 
+//   }
+// }
+
+// .glitch-header:after{
+//   animation: glitchBotom 1.5s linear infinite;
+//   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+//   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+// }
+
+// @keyframes glitchBotom{
+//   2%,64%{
+//     transform: translate(-2px,0);
+//   }
+//   4%,60%{
+//     transform: translate(-2px,0);
+//   }
+//   62%{
+//     transform: translate(-22px,5px) skew(21deg); 
+//   }
+// }
+//     .glitch-header{
+//       animation: glitchh1 1s linear infinite;
+//     }
