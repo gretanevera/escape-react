@@ -1,31 +1,36 @@
 import React from 'react';
 import './App.css';
 import './styles/glitch.css';
-
+import {  BrowserRouter as Router,  Switch,  Route} from "react-router-dom";import { HomePage } from './conainers/Home';
+import AboutPage from './conainers/About';
+import Cabin from './conainers/Cabin';
 
 function App() {
-  return (
-    <div className="App">
-     
+//some global varialbes stored in local/session storage, reset evrytime a new game starts
 
-    <h1 class="glitch-header" title="Escape it!">Escape!</h1>
-        <div class="button-wrapper">
-           {/* temp redirect */}
-            <a href="pages/about.html" class="menu-button-start glitch" data-text="New Game" onclick="newGame();">
-                New game</a>
-            <a href="#" class="menu-button-start glitch" onclick="loadGame();" data-text="Load Game">
-                Load game</a>
-            <a href="#" class="menu-button-start glitch" onclick="help();" data-text="HELP">
-                Help
-            </a>
-            {/* <!-- <a href="#leaderboards" class="menu-button-start" >
-                    The ones that escaped
-                </a> --> */}
-        </div>
+//difficulty
+//level (in accordance to notes found)
+//timers
+//score 
 
 
-    </div>
-  );
+
+    return (
+        <div className="App">
+
+            {/* start menu probably will have to move to seperate js */}
+            {/* // Route goes here */}
+            <Router>
+                    <Switch> 
+                    <Route exact path="/" component={HomePage} />
+                    <Route exact path="/about" component={AboutPage} />
+                    <Route exact path="/cabin" component={Cabin} />
+
+                    </Switch>
+            </Router>
+
+        </div >
+    );
 }
 
 export default App;

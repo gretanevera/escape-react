@@ -38,6 +38,31 @@ h1 {
   font-family: 'slender';
 }
 
+p {
+  font-family: 'slender';
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 .button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,7 +93,6 @@ h1 {
   -webkit-transition: ease-in color 0.5s;
   transition: ease-in color 0.5s;
   color: #c40e0e;
-  /* transition: ease-out  color 1s; */
   /* animation: glitch 3s infinite alternate-reverse; */
 }
 /*# sourceMappingURL=index.css.map */
