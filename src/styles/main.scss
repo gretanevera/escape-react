@@ -1,0 +1,83 @@
+//$bgUrl : url('../media/img/glitchForest.gif');
+
+body {
+    height: 100vh;
+    background-color: black;
+    color: white;
+ //   background: $bgUrl no-repeat center center fixed;
+ background-image: none;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainBody{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+    font-weight: 700;
+    font-family: 'slender';
+}
+#typedTextWrap {
+    font-family: 'slender';
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 40px;
+}
+
+
+
+button:focus {
+    text-decoration: none;
+    border: none;
+    background: none;
+    outline:0;
+}
+
+button:hover {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+button:active {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-button-start {
+    // margin: 10px;
+    font-family: 'slender';
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+    border: none;
+    background: none;
+}
+
+.menu-button-start:hover {
+    transition: ease-in color 0.5s;
+    color: #c40e0e;
+    // transition: ease-out  color 1s; 
+    /* animation: glitch 3s infinite alternate-reverse; */
+}
