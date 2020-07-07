@@ -4,7 +4,7 @@ import './styles/glitch.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HomePage } from './containers/Home';
 import AboutPage from './containers/About';
-import Cabin from './containers/Cabin';
+import Cabin from './containers/Site1';
 
 
 function App() {
