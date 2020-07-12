@@ -24,7 +24,7 @@ export default function AboutPage() {
         northEast="/toys"
         northCenter="/cabin"
         northWest="/westforest"
-        centerEast="/thepit"
+        centerEast="/pit"
         centerWest="#"
         southEast="#"
         southCenter="#"

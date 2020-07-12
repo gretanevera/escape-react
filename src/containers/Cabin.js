@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
 
 export default function Cabin() {
     console.log('you enter the cabin... its cold...')
@@ -7,6 +8,22 @@ export default function Cabin() {
 //cabin needs a few pictures, note is hidden in one.
 <div>
     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, debitis inventore atque dolorum aliquam dolore!</p>
+
+
+
+
+    <Navigation
+        northEast="/testsite"                northEastEvents="auto"
+        northCenter=""                   northCenterEvents="none"
+        northWest="/clearing"            northWestEvents="auto"
+        centerEast="/eastforest"                    centerEastEvents="auto"
+        centerWest="/westforest"          centerWestEvents="auto"
+        southEast="/toys"                southEastEvents="auto"
+        southCenter=""              southCenterEvents="none"
+        southWest=""               southWestEvents="none"
+
+       
+      />
 </div>
 
 

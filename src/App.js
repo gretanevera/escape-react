@@ -13,6 +13,8 @@ import ThePit from './containers/The pit';
 import Thickets from './containers/Thickets';
 import ToyPile from './containers/ToyPile';
 import TestSite7 from './containers/TestSite7';
+import EastForest from './containers/EastForest';
+import WestForest from './containers/WestForest';
 
 
 import AboutPage from './containers/About';
@@ -38,10 +40,11 @@ function App() {
                     <Route exact path="/pit" component={ThePit} />
                     <Route exact path="/thickets" component={Thickets} />
                     <Route exact path="/toys" component={ToyPile} />
+                    <Route exact path="/eastforest" component={EastForest} />
+                    <Route exact path="/westforest" component={WestForest} />
 
-
-
-                    TestSite7
+                    
+                  
                 {/* random routes? */}
 
                 </Switch>

@@ -23,15 +23,17 @@ export default function TestSite7() {
 
 
             <Navigation
-                northEast = ""
-                northCenter = ""
-                northWest = ""
-                centerEast = ""
-                centerWest = ""
-                southEast = ""
-                southCenter = ""
-                southWest = ""
-                />
+        northEast="/tree"                northEastEvents="auto"
+        northCenter=""                   northCenterEvents="none"
+        northWest="/thickets"            northWestEvents="auto"
+        centerEast=""                    centerEastEvents="none"
+        centerWest="/clearing"          centerWestEvents="auto"
+        southEast="/eastforest"                southEastEvents="auto"
+        southCenter="/toys"              southCenterEvents="auto"
+        southWest="/cabin"               southWestEvents="auto"
+
+       
+      />
 
 
 <ModalContent image= {note1}/>
