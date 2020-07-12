@@ -4,8 +4,7 @@ import './styles/glitch.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HomePage } from './containers/Home';
 import AboutPage from './containers/About';
-import Cabin from './containers/Site1';
-
+import TestSite7 from './containers/TestSite7'
 
 function App() {
 
@@ -22,6 +21,11 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/about" component={AboutPage} />
+                    <Route exact path="/testSite" component={TestSite7} />
+
+
+
+                    TestSite7
                 {/* random routes? */}
 
                 </Switch>

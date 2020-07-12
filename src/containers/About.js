@@ -1,12 +1,9 @@
-import React /*, { useEffect } */ from 'react';
+import React from 'react';
 import '../styles/typewriter.css';
-// import '../styles/about.css'
 
 export default function AboutPage() {
-//will probaably change into index file or main nav for the whole game. ppl have to get back to this to navigate the site ON PURPOSE
 
   console.log('this is where you adventure begins and ends')
-
 
   let gameStats = JSON.parse(sessionStorage.getItem('gameStats'));
   console.log(gameStats)
