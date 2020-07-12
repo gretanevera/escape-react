@@ -6,13 +6,19 @@ import "./styles/navigation.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HomePage } from './containers/Home';
+import Cabin from './containers/Cabin';
+import Clearing from './containers/Clearing';
+import ScorchedTree from './containers/ScorchedTree';
+import ThePit from './containers/The pit';
+import Thickets from './containers/Thickets';
+import ToyPile from './containers/ToyPile';
+import TestSite7 from './containers/TestSite7';
+
+
 import AboutPage from './containers/About';
-import TestSite7 from './containers/TestSite7'
 
 function App() {
 
-    let bgIwanna = '../media/img/glitchForest.gif';
-    let attIWanna = 'no-repeat center center fixed'
 
     //some global varialbes stored in local/session storage, reset evrytime a new game starts
     return (
@@ -24,7 +30,14 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/about" component={AboutPage} />
-                    <Route exact path="/testSite" component={TestSite7} />
+                    <Route exact path="/testsite" component={TestSite7} />
+
+                    <Route exact path="/cabin" component={Cabin} />
+                    <Route exact path="/clearing" component={Clearing} />
+                    <Route exact path="/tree" component={ScorchedTree} />
+                    <Route exact path="/pit" component={ThePit} />
+                    <Route exact path="/thickets" component={Thickets} />
+                    <Route exact path="/toys" component={ToyPile} />
 
 
 
