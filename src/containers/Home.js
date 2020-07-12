@@ -5,8 +5,9 @@ import '../styles/main.css';
 
 
 
-export function HomePage() {
+export default function HomePage() {
 
+    let foundNotes =["none",];
 
     // var gameHasBegun = false;
     // var gameDifficulty   //difficulty 3 levels, blessed/hunted/cursed
@@ -21,9 +22,10 @@ export function HomePage() {
         "deathClock" : 9999, 
         "gameHasBegun" : false}
 
-console.log(gameSetUp)
+console.log(foundNotes)
 sessionStorage.setItem('gameStats', JSON.stringify(gameSetUp));
-  
+sessionStorage.setItem('foundNotes', JSON.stringify(foundNotes));
+
 
 
 

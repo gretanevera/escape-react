@@ -1,41 +1,81 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ModalNote from '../components/ModalNotes';
+import ModalContent from '../components/ModalContent';
+import note8 from '../media/img/note8.png';
 import Navigation from "../components/Navigation";
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
 
 export default function Thickets() {
-    console.log('The forest gets thicker in here, i cant go further')
-    NoteManager();
-         if (window.performance) {
-            //console.info("window.performance works fine on this browser");
-          }
-            if (performance.navigation.type === 1) {
-              GameOver(0, ' You turned around') //refreshed page
-            } 
+  let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
+  const [state, setState] = useState('')
 
-//change the background to not glitchy
+  if (performance.navigation.type === 1) {
+    GameOver(0, ' You turned around') //refreshed page
+  }
+
+
+
+   function handleClick() {
+    ModalNote();
+    NoteManager("thicketsNote");
+    setState('new')
+  }
+
+
+  if (foundNotes.includes('thicketsNote')) {
     return(
-//reach into the thorns, an eye for an eye
-<div>
-    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, debitis inventore atque dolorum aliquam dolore!</p>
+      <div>
+          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, 
+       debitis inventore atque dolorum aliquam dolore!</p>
+      
+      
+                      <Navigation
+              northEast=""                northEastEvents="none"
+              northCenter=""                   northCenterEvents="none"
+              northWest=""            northWestEvents="none"
+              centerEast=""                    centerEastEvents="none"
+              centerWest=""          centerWestEvents="none"
+              southEast="/clearing"                southEastEvents="auto"
+              southCenter="/westforest"              southCenterEvents="auto"
+              southWest=""               southWestEvents="none"
+      
+             
+            />
+      
+            <ModalContent image={note8}/>
+      
+      </div>
+      
+      
+          );
+  }else{
+    return(
+      <div>
+          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, <span className='glitch' data-text='amet' onClick={handleClick}> amet </span>
+       debitis inventore atque dolorum aliquam dolore!</p>
+      
+      
+                      <Navigation
+              northEast=""                northEastEvents="none"
+              northCenter=""                   northCenterEvents="none"
+              northWest=""            northWestEvents="none"
+              centerEast=""                    centerEastEvents="none"
+              centerWest=""          centerWestEvents="none"
+              southEast="/clearing"                southEastEvents="auto"
+              southCenter="/westforest"              southCenterEvents="auto"
+              southWest=""               southWestEvents="none"
+      
+             
+            />
+      
+            <ModalContent image={note8}/>
+      
+      </div>
+      
+      
+          );
+  }
 
 
-                <Navigation
-        northEast=""                northEastEvents="none"
-        northCenter=""                   northCenterEvents="none"
-        northWest=""            northWestEvents="none"
-        centerEast=""                    centerEastEvents="none"
-        centerWest=""          centerWestEvents="none"
-        southEast="/clearing"                southEastEvents="auto"
-        southCenter="/westforest"              southCenterEvents="auto"
-        southWest=""               southWestEvents="none"
-
-       
-      />
-
-
-</div>
-
-
-    );
 }

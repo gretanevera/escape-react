@@ -1,0 +1,33 @@
+import React, {useState} from 'react';
+import ModalNote from '../components/ModalNotes';
+import ModalContent from '../components/ModalContent';
+import note1 from '../media/img/note1.png';
+
+
+
+ let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
+  const [state, setState] = useState('')
+
+  if (performance.navigation.type === 1) {
+    GameOver(0, ' You turned around') //refreshed page
+  }
+
+
+
+   function handleClick() {
+    ModalNote();
+    NoteManager("testNote");
+    setState('new')
+  }
+
+
+
+<span className='glitch' data-text='amet' onClick={handleClick}> amet </span>
+
+<ModalContent image={note1}/>
+
+if (foundNotes.includes('Note')) {
+
+}else{
+
+}

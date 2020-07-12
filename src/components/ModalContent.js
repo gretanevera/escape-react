@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default function ModalContent(props) {
+  
     return (
         <div id="myModal" className="modal">
-
 <div className="modal-content">
   <span className="close">&times;</span>
  <img className='notes' src={props.image}></img>

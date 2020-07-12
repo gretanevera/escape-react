@@ -4,7 +4,6 @@ import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
 
 function EastForest() {
-    NoteManager();
          if (window.performance) {
             //console.info("window.performance works fine on this browser");
           }

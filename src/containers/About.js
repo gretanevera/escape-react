@@ -8,8 +8,7 @@ export default function AboutPage() {
 
   console.log('this is where you adventure begins and ends')
 
-  NoteManager();
-
+  
   return (
 
     <div className='mainBody'>

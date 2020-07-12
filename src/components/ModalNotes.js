@@ -1,17 +1,16 @@
 import NoteManager from "./NoteManager";
 
 export default function ModalNote() {
-//make a link not clickable again
-NoteManager(true);
-// break the timer
+    //make a link not clickable again
 
+    // break the timer
     //opens up when a note is found shows an image od the note
     // Get the modal
 
     var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
-  //  var btn = document.getElementById("myBtn");
+    //  var btn = document.getElementById("myBtn");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -29,8 +28,8 @@ NoteManager(true);
     window.onclick = function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
+
         }
     }
-
 
 }

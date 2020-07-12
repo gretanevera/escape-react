@@ -6,7 +6,7 @@ import './styles/glitch.css';
 import "./styles/modal.css";
 import "./styles/navigation.css";
 
-import { HomePage } from './containers/Home';
+import  HomePage  from './containers/Home';
 import Cabin from './containers/Cabin';
 import Clearing from './containers/Clearing';
 import ScorchedTree from './containers/ScorchedTree';
@@ -18,6 +18,7 @@ import EastForest from './containers/EastForest';
 import WestForest from './containers/WestForest';
 import AboutPage from './containers/About';
 import GameEnd from './containers/GameEnd';
+import GameWin from './containers/GameWin';
 
 function App() {
     return (
@@ -37,6 +38,7 @@ function App() {
                     <Route exact path="/eastforest" component={EastForest} />
                     <Route exact path="/westforest" component={WestForest} />
                     <Route exact path="/over" component={GameEnd} />
+                    <Route exact path="/win" component={GameWin} />
 
                     {/* random routes? */}
                 </Switch>

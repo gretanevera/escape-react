@@ -128,4 +128,8 @@ h1 {
 .notification-text {
   font-size: 10px;
 }
+
+#note {
+  pointer-events: auto;
+}
 /*# sourceMappingURL=main.css.map */

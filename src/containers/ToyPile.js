@@ -5,7 +5,6 @@ import NoteManager from '../components/NoteManager';
 
 export default function ToyPile() {
     console.log('there is a pile of toys on clearly burnt ground')
-    NoteManager();
          if (window.performance) {
             //console.info("window.performance works fine on this browser");
           }
