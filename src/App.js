@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import './styles/glitch.css';
+import "./styles/modal.css";
+import "./styles/navigation.css";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HomePage } from './containers/Home';
 import AboutPage from './containers/About';

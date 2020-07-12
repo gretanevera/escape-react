@@ -1,14 +1,16 @@
-import React from 'react';
-import "../styles/modal.css";
+import React, { useState, useEffect } from 'react';
+// import "../styles/modal.css";
 import Navigation from "../components/Navigation";
 import ModalNote from '../components/ModalNotes';
 import note1 from '../media/img/note1.png';
 import ModalContent from '../components/ModalContent';
+import Timer from '../components/Timer';
 
 export default function TestSite7() {
     console.log('you enter the cabin... its cold...')
     //this is where things get tested
-    return (
+         Timer(8,1);
+        return (
 
         <div className='content-wrappper'>
             welvome to my testing fascility
