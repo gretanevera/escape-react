@@ -1,10 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import './App.css';
 import './styles/glitch.css';
 import "./styles/modal.css";
 import "./styles/navigation.css";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HomePage } from './containers/Home';
 import Cabin from './containers/Cabin';
 import Clearing from './containers/Clearing';
@@ -15,19 +16,12 @@ import ToyPile from './containers/ToyPile';
 import TestSite7 from './containers/TestSite7';
 import EastForest from './containers/EastForest';
 import WestForest from './containers/WestForest';
-
-
 import AboutPage from './containers/About';
+import GameEnd from './containers/GameEnd';
 
 function App() {
-
-
-    //some global varialbes stored in local/session storage, reset evrytime a new game starts
     return (
-        <div className="App" > 
-        
-            {/* start menu probably will have to move to seperate js */}
-            {/* // Route goes here */}
+        <div className="App" >
             <Router>
                 <Switch>
                     <Route exact path="/" component={HomePage} />
@@ -42,11 +36,9 @@ function App() {
                     <Route exact path="/toys" component={ToyPile} />
                     <Route exact path="/eastforest" component={EastForest} />
                     <Route exact path="/westforest" component={WestForest} />
+                    <Route exact path="/over" component={GameEnd} />
 
-                    
-                  
-                {/* random routes? */}
-
+                    {/* random routes? */}
                 </Switch>
             </Router>
 

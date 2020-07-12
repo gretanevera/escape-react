@@ -1,8 +1,17 @@
 import React from 'react';
 import Navigation from "../components/Navigation";
+import GameOver from '../components/GameOver';
 
 export default function Thickets() {
     console.log('The forest gets thicker in here, i cant go further')
+    
+         if (window.performance) {
+            //console.info("window.performance works fine on this browser");
+          }
+            if (performance.navigation.type == 1) {
+              GameOver(0, ' You turned around') //refreshed page
+            } 
+
 //change the background to not glitchy
     return(
 //reach into the thorns, an eye for an eye

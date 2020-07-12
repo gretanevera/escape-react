@@ -1,7 +1,16 @@
 import React from 'react';
 import Navigation from '../components/Navigation'
+import GameOver from '../components/GameOver';
 
 function EastForest() {
+    
+         if (window.performance) {
+            //console.info("window.performance works fine on this browser");
+          }
+            if (performance.navigation.type == 1) {
+              GameOver(0, ' You turned around') //refreshed page
+            } 
+
     return (
         <div>
             

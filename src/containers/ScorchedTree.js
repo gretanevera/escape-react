@@ -1,7 +1,16 @@
 import React from 'react';
 import Navigation from "../components/Navigation";
+import GameOver from '../components/GameOver';
 
 export default function ScorchedTree() {
+    
+         if (window.performance) {
+            //console.info("window.performance works fine on this browser");
+          }
+            if (performance.navigation.type == 1) {
+              GameOver(0, ' You turned around') //refreshed page
+            } 
+
     console.log('There is a tree... all scorched, like it was burnt or hit by a lightning')
 //change the background to not glitchy
     return(

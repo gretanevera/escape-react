@@ -1,8 +1,17 @@
 import React from 'react';
 import Navigation from "../components/Navigation";
+import GameOver from '../components/GameOver';
 
 export default function ToyPile() {
     console.log('there is a pile of toys on clearly burnt ground')
+    
+         if (window.performance) {
+            //console.info("window.performance works fine on this browser");
+          }
+            if (performance.navigation.type == 1) {
+              GameOver(0, ' You turned around') //refreshed page
+            } 
+
 //change the background to not glitchy
     return(
 //pictures of toys in the forest, the note is hidden in one
