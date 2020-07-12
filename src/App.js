@@ -10,7 +10,7 @@ import { HomePage } from './containers/Home';
 import Cabin from './containers/Cabin';
 import Clearing from './containers/Clearing';
 import ScorchedTree from './containers/ScorchedTree';
-import ThePit from './containers/The pit';
+import ThePit from './containers/ThePit';
 import Thickets from './containers/Thickets';
 import ToyPile from './containers/ToyPile';
 import TestSite7 from './containers/TestSite7';

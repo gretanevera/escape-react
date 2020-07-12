@@ -1,22 +1,21 @@
-import React, { useState, useEffect } from 'react';
-// import "../styles/modal.css";
+import React from 'react';
 import Navigation from "../components/Navigation";
 import ModalNote from '../components/ModalNotes';
 import note1 from '../media/img/note1.png';
 import ModalContent from '../components/ModalContent';
-import Timer from '../components/Timer';
 import GameOver from '../components/GameOver';
+import NoteManager from '../components/NoteManager';
 
 export default function TestSite7() {
     console.log('you enter the cabin... its cold...')
     //this is where things get tested
-         Timer(8,1);
+        NoteManager();
 
 
          if (window.performance) {
             //console.info("window.performance works fine on this browser");
           }
-            if (performance.navigation.type == 1) {
+            if (performance.navigation.type === 1) {
               GameOver(0, ' You turned around') //refreshed page
             } 
 

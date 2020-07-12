@@ -1,4 +1,3 @@
-import React from 'react';
 import moveOn from '../components/MoveOn'
 
 export default function NewGame() {

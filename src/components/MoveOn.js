@@ -1,4 +1,3 @@
-import React from 'react';
 
 export default function moveOn(route) {
     window.location.href = route;

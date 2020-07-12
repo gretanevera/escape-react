@@ -1,6 +1,9 @@
-import React from 'react';
+import NoteManager from "./NoteManager";
 
 export default function ModalNote() {
+//make a link not clickable again
+NoteManager(true);
+// break the timer
 
     //opens up when a note is found shows an image od the note
     // Get the modal
@@ -8,7 +11,7 @@ export default function ModalNote() {
     var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+  //  var btn = document.getElementById("myBtn");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -24,7 +27,7 @@ export default function ModalNote() {
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
-        if (event.target == modal) {
+        if (event.target === modal) {
             modal.style.display = "none";
         }
     }

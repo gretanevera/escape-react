@@ -1,13 +1,16 @@
 import React from 'react';
 import Navigation from "../components/Navigation";
 import GameOver from '../components/GameOver';
+import NoteManager from '../components/NoteManager';
 
 export default function ScorchedTree() {
-    
+    NoteManager();
+
+
          if (window.performance) {
             //console.info("window.performance works fine on this browser");
           }
-            if (performance.navigation.type == 1) {
+            if (performance.navigation.type === 1) {
               GameOver(0, ' You turned around') //refreshed page
             } 
 

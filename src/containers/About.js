@@ -1,14 +1,14 @@
 import React from 'react';
 import '../styles/typewriter.css';
 import Navigation from '../components/Navigation'
+import NoteManager from '../components/NoteManager';
 
 
 export default function AboutPage() {
 
   console.log('this is where you adventure begins and ends')
 
-  let gameStats = JSON.parse(sessionStorage.getItem('gameStats'));
-  console.log(gameStats)
+  NoteManager();
 
   return (
 
