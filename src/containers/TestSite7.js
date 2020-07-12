@@ -1,5 +1,10 @@
 import React from 'react';
-import Navigation from "../components/Navigation"
+import "../styles/modal.css";
+import Navigation from "../components/Navigation";
+import ModalNote from '../components/ModalNotes';
+import note1 from '../media/img/note1.png';
+import ModalContent from '../components/ModalContent';
+
 export default function TestSite7() {
     console.log('you enter the cabin... its cold...')
     //this is where things get tested
@@ -7,9 +12,9 @@ export default function TestSite7() {
 
         <div className='content-wrappper'>
             welvome to my testing fascility
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere architecto beatae accusamus error incidunt, dolorum enim, a commodi, saepe ut aliquam consequuntur hic sapiente porro blanditiis earum vero. Earum, beatae!</p>
-            <h3>Now lets make a chatbox</h3>
-
+            <p>Lorem ipsum dolor sit <span onClick={ModalNote}> amet</span>  consectetur, adipisicing elit. Facere architecto beatae accusamus error incidunt, dolorum enim, a commodi, saepe ut aliquam consequuntur hic sapiente porro blanditiis earum vero. Earum, beatae!</p>
+           
+           
 
 
 
@@ -25,8 +30,11 @@ export default function TestSite7() {
                 southCenter = ""
                 southWest = ""
                 />
-</div>
 
+
+<ModalContent image= {note1}/>
+
+</div>
 
     );
 }

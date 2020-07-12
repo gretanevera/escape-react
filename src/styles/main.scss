@@ -35,20 +35,20 @@ h1 {
 
 
 
-button:focus {
+.menu-button-start:focus {
     text-decoration: none;
     border: none;
     background: none;
     outline:0;
 }
 
-button:hover {
+.menu-button-start:hover {
     text-decoration: none;
     border: none;
     background: none;
 }
 
-button:active {
+.menu-button-start:active {
     text-decoration: none;
     border: none;
     background: none;
@@ -118,4 +118,8 @@ color: black;
 }
 .chatbox-bottom-lip{
     background-color: grey;
+}
+
+.notification-text{
+    font-size: 10px
 }
