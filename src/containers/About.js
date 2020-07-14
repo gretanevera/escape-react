@@ -2,9 +2,11 @@ import React from 'react';
 import '../styles/typewriter.css';
 import Navigation from '../components/Navigation'
 import NoteManager from '../components/NoteManager';
+import { useHistory } from 'react-router-dom';
 
 
 export default function AboutPage() {
+  let history = useHistory();
 
   console.log('this is where you adventure begins and ends')
 

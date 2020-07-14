@@ -5,8 +5,11 @@ import note7 from '../media/img/note7.png';
 import Navigation from "../components/Navigation";
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
+import { useHistory } from 'react-router-dom';
 
 export default function ThePit() {
+  let history = useHistory();
+
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
   const [state, setState] = useState('')
 

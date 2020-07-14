@@ -2,8 +2,11 @@ import React from 'react';
 import Navigation from '../components/Navigation'
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
+import { useHistory } from 'react-router-dom';
 
 function EastForest() {
+  let history = useHistory();
+
          if (window.performance) {
             //console.info("window.performance works fine on this browser");
           }

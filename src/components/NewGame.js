@@ -1,7 +1,10 @@
-import moveOn from '../components/MoveOn'
+import MoveOn from '../components/MoveOn'
 
-export default function NewGame() {
-   
+export default function NewGame(history) {
+
+ 
+ 
+
     console.log('new game has begun')
     //new game, ask for name, choose difficulty
     //set new params for global vars according to difficulty
@@ -24,6 +27,7 @@ export default function NewGame() {
 
     console.log(test);
 
-  moveOn("/about");
+  MoveOn(history, "/about");
+
 
 };

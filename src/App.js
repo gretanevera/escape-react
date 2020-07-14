@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect, useHistory } from "react-router-dom";
 
 import './App.css';
-import './styles/glitch.css';
 import "./styles/modal.css";
 import "./styles/navigation.css";
+import './styles/glitch.css';
 
 import  HomePage  from './containers/Home';
 import Cabin from './containers/Cabin';
@@ -19,10 +19,33 @@ import WestForest from './containers/WestForest';
 import AboutPage from './containers/About';
 import GameEnd from './containers/GameEnd';
 import GameWin from './containers/GameWin';
+import Background1 from './media/img/glitchForestWithSlendy.gif';
+import Background2 from './media/img/forest.jpg';
+
+
 
 function App() {
+let history = useHistory();
+    let bgImage;
+
+    let gameStats = JSON.parse( sessionStorage.getItem('gameStats'))
+console.log(gameStats.gameHasBegun)
+
+    if (gameStats.gameHasBegun ==true) {
+        bgImage = Background1;
+        console.log('true')
+    } else {
+        bgImage = Background2;
+        console.log('false')
+
+    }
+
+
+const bgConfig ={
+    backgroundImage: `url(${bgImage})`}
+
     return (
-        <div className="App" >
+        <div className="App"  style={bgConfig}>
             <Router>
                 <Switch>
                     <Route exact path="/" component={HomePage} />

@@ -5,9 +5,12 @@ import NoteManager from '../components/NoteManager';
 import note3 from '../media/img/note3.png';
 import ModalNote from '../components/ModalNotes';
 import ModalContent from '../components/ModalContent';
+import { useHistory } from 'react-router-dom';
 
 export default function Clearing() {
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
+  let history = useHistory();
+
   const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {

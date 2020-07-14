@@ -2,7 +2,6 @@ body {
   height: 100vh;
   background-color: black;
   color: white;
-  background-image: none;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,9 +40,11 @@ h1 {
   font-size: 40px;
   margin: 20px;
   font-weight: 700;
+  font-family: 'slender';
 }
 
 #typedTextWrap {
+  font-family: 'slender';
   font-size: 25px;
   font-weight: bolder;
   line-height: 40px;
@@ -85,6 +86,7 @@ h1 {
 }
 
 .menu-button-start {
+  font-family: 'slender';
   font-size: 30px;
   color: white;
   text-decoration: none;
@@ -99,30 +101,6 @@ h1 {
   transition: ease-in color 0.5s;
   color: #c40e0e;
   /* animation: glitch 3s infinite alternate-reverse; */
-}
-
-.chatbox-wrapper {
-  border: white solid 2px;
-  width: 20%;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  font-size: 12px;
-}
-
-.chatbox-upper-lip {
-  background-color: grey;
-  color: black;
-  height: 25px;
-}
-
-.chatbox-feed {
-  height: 20vh;
-  background-color: lightgray;
-  color: black;
-}
-
-.chatbox-bottom-lip {
-  background-color: grey;
 }
 
 .notification-text {

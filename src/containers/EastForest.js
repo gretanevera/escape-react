@@ -5,8 +5,11 @@ import Navigation from '../components/Navigation'
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
 import note4 from '../media/img/note4.png';
+import { useHistory } from 'react-router-dom';
 
 function EastForest() {
+  let history = useHistory();
+
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
   const [state, setState] = useState('')
 

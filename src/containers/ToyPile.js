@@ -2,8 +2,11 @@ import React from 'react';
 import Navigation from "../components/Navigation";
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
+import { useHistory } from 'react-router-dom';
 
 export default function ToyPile() {
+  let history = useHistory();
+
     console.log('there is a pile of toys on clearly burnt ground')
          if (window.performance) {
             //console.info("window.performance works fine on this browser");

@@ -5,7 +5,12 @@ import note6 from '../media/img/note6.png';
 import ModalContent from '../components/ModalContent';
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
+import { useHistory } from 'react-router-dom';
+
+
+
 export default function TestSite7() {
+  let history = useHistory();
 
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
   const [state, setState] = useState('')
