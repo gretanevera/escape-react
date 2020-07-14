@@ -8,10 +8,10 @@ import NoteManager from '../components/NoteManager';
 import { useHistory } from 'react-router-dom';
 
 export default function ThePit() {
-  let history = useHistory();
+ // let history = useHistory();
 
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
-  const [state, setState] = useState('')
+ // const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {
     GameOver(0, ' You turned around') //refreshed page
@@ -22,7 +22,7 @@ export default function ThePit() {
    function handleClick() {
     ModalNote();
     NoteManager("pitNote");
-    setState('new')
+   // setState('new')
   }
 
   if (foundNotes.includes('pitNote')) {

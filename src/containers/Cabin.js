@@ -5,15 +5,16 @@ import ModalNote from '../components/ModalNotes';
 import note2 from '../media/img/note2.png'
 import ModalContent from '../components/ModalContent';
 import { useHistory } from 'react-router-dom';
+import GameOver from '../components/GameOver';
 
 export default function Cabin() {
-  let history = useHistory();
+//  let history = useHistory();
 
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
-  const [state, setState] = useState('')
+ // const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {
-    // GameOver(0, ' You turned around') //refreshed page
+    GameOver(0, ' You turned around') //refreshed page
   }
 
 
@@ -21,7 +22,7 @@ export default function Cabin() {
   function handleClick() {
     ModalNote();
     NoteManager("cabinNote");
-    setState('new')
+    
   }
 
   if (foundNotes.includes('cabinNote')) {

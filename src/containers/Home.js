@@ -6,28 +6,22 @@ import MoveOn from '../components/MoveOn';
 
 
 export default function HomePage() {
-
-
+    let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))
     let history = useHistory();
-    let foundNotes = ["none",];
     let gameSetUp = {
         "gameDifficulty": 0,
         "notesFound": 0,
         "score": 0,
         "deathClock": 9999,
         "gameHasBegun": false}
-    let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))
+       
 
-if (gameStats.gameHasBegun == true) {
-  console.log('the game has begun')
-}else{
-    console.log(foundNotes)
-    sessionStorage.setItem('gameStats', JSON.stringify(gameSetUp));
-    sessionStorage.setItem('foundNotes', JSON.stringify(foundNotes));
-}
+if (gameStats == null) {
+    sessionStorage.setItem('gameStats', JSON.stringify(gameSetUp))
+ }
+let currentGameStats = JSON.parse(sessionStorage.getItem('gameStats'))
 
-
-
+// console.log('currentGameStats' + currentGameStats.gameHasBegun)
 
     // var gameHasBegun = false;
     // var gameDifficulty   //difficulty 3 levels, blessed/hunted/cursed
@@ -51,7 +45,7 @@ if (gameStats.gameHasBegun == true) {
                 <button className="menu-button-start glitch" onClick={handleClick} data-text="New Game" >
                     New game</button >
                 
-                    {gameStats.gameHasBegun == true  &&
+                    {currentGameStats.gameHasBegun == true  &&
         <button className="menu-button-start glitch" onClick={handleContinue} data-text="Continue">
         Continue
         </button>

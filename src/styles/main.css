@@ -2,7 +2,6 @@ body {
   height: 100vh;
   background-color: black;
   color: white;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

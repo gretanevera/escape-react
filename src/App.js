@@ -6,7 +6,7 @@ import "./styles/modal.css";
 import "./styles/navigation.css";
 import './styles/glitch.css';
 
-import  HomePage  from './containers/Home';
+import HomePage from './containers/Home';
 import Cabin from './containers/Cabin';
 import Clearing from './containers/Clearing';
 import ScorchedTree from './containers/ScorchedTree';
@@ -21,31 +21,43 @@ import GameEnd from './containers/GameEnd';
 import GameWin from './containers/GameWin';
 import Background1 from './media/img/glitchForestWithSlendy.gif';
 import Background2 from './media/img/forest.jpg';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 
 function App() {
-let history = useHistory();
-    let bgImage;
 
-    let gameStats = JSON.parse( sessionStorage.getItem('gameStats'))
-console.log(gameStats.gameHasBegun)
+let bgImage=Background2
+    
+    // let gameStats = JSON.parse(sessionStorage.getItem('gameStats'));
 
-    if (gameStats.gameHasBegun ==true) {
-        bgImage = Background1;
-        console.log('true')
-    } else {
-        bgImage = Background2;
-        console.log('false')
+    // if (gameStats == null) {
+    //     console.log('new player')
+    //     // bgImage = Background2
 
+
+    // } else {
+    //     console.log('returning player')
+    //     if (gameStats.gameHasBegun == true) {
+    //         // bgImage = Background1
+    //         console.log('true')
+    //     }
+    // }
+
+
+
+    var bgConfig = {
+        backgroundImage: `url(${bgImage})`,
+        backroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover'
     }
 
 
-const bgConfig ={
-    backgroundImage: `url(${bgImage})`}
-
     return (
-        <div className="App"  style={bgConfig}>
+        <div className="App" style={bgConfig}>
             <Router>
                 <Switch>
                     <Route exact path="/" component={HomePage} />

@@ -1,12 +1,12 @@
 import Timer from './Timer';
 import moveOn from './MoveOn';
+import { useHistory } from 'react-router-dom';
 
 function NoteManager(note) {
+  let history = useHistory
   let foundNotes =JSON.parse(sessionStorage.getItem('foundNotes'));
   let gameStats = JSON.parse(sessionStorage.getItem('gameStats'));
-  console.log(foundNotes)
   foundNotes.push(note)
-  console.log(foundNotes)
   gameStats.notesFound = gameStats.notesFound + 1;
   sessionStorage.setItem('gameStats', JSON.stringify(gameStats))
   sessionStorage.setItem('foundNotes', JSON.stringify(foundNotes))
@@ -17,7 +17,7 @@ function NoteManager(note) {
 
   if (foundNotes.length == 8) {
     console.log('win')
-    moveOn('/win');
+    moveOn(history, '/win');
   } 
 }
 

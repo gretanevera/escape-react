@@ -6,11 +6,9 @@ import { useHistory } from 'react-router-dom';
 
 
 export default function AboutPage() {
-  let history = useHistory();
+ // let history = useHistory();
 
-  console.log('this is where you adventure begins and ends')
-
-  
+ 
   return (
 
     <div className='mainBody'>

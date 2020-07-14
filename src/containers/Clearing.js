@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom';
 
 export default function Clearing() {
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
-  let history = useHistory();
+ // let history = useHistory();
 
   const [state, setState] = useState('')
 

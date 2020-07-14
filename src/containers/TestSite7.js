@@ -10,10 +10,10 @@ import { useHistory } from 'react-router-dom';
 
 
 export default function TestSite7() {
-  let history = useHistory();
+ // let history = useHistory();
 
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
-  const [state, setState] = useState('')
+  //const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {
     GameOver(0, ' You turned around') //refreshed page
@@ -24,7 +24,7 @@ export default function TestSite7() {
    function handleClick() {
     ModalNote();
     NoteManager("testNote");
-    setState('new')
+  //  setState('new')
   }
 
   if (foundNotes.includes('testNote')) {

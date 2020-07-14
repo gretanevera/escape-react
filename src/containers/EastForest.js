@@ -1,29 +1,29 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ModalNote from '../components/ModalNotes';
 import ModalContent from '../components/ModalContent';
-import Navigation from '../components/Navigation'
+import Navigation from "../components/Navigation";
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
 import note4 from '../media/img/note4.png';
-import { useHistory } from 'react-router-dom';
 
 function EastForest() {
-  let history = useHistory();
+// let history = useHistory();
 
-  let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
-  const [state, setState] = useState('')
+let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
+// const [state, setState] = useState('')
 
-  if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around') //refreshed page
-  }
+ if (performance.navigation.type === 1) {
+   GameOver(0, ' You turned around') //refreshed page
+ }
 
 
 
-   function handleClick() {
-    ModalNote();
-    NoteManager("eForestNote");
-    setState('new')
-  }
+  function handleClick() {
+   ModalNote();
+   NoteManager("eForestNote");
+  // setState('new')
+ }
+
 
   if (foundNotes.includes('eForestNote')) {
     return (
@@ -54,8 +54,8 @@ natus eum accusamus harum nisi praesentium architecto vero.</p>
     return (
       <div>
           
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia alias cum temporibus facilis reprehenderit cupiditate non sit voluptatem laborum doloremque eos ipsam, <span className='glitch' data-text='amet' onClick={handleClick}> amet </span>
-natus eum accusamus harum nisi praesentium architecto vero.</p>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, <span className='glitch' data-text='amet' onClick={handleClick}> amet </span>
+       debitis inventore atque dolorum aliquam dolore!</p>
 
 
 
