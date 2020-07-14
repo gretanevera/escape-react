@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom';
 
 export default function ScorchedTree() {
 
- // let history = useHistory();
+ let history = useHistory();
 
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
 //  const [state, setState] = useState('')
@@ -22,7 +22,7 @@ export default function ScorchedTree() {
 
   function handleClick() {
     ModalNote();
-    NoteManager("treeNote");
+    NoteManager(history, "treeNote");
  //   setState('new')
   }
 

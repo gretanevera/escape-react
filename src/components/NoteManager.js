@@ -1,9 +1,8 @@
-import Timer from './Timer';
+import React from 'react';
 import moveOn from './MoveOn';
-import { useHistory } from 'react-router-dom';
 
-function NoteManager(note) {
-  let history = useHistory
+
+function NoteManager(history, note) {
   let foundNotes =JSON.parse(sessionStorage.getItem('foundNotes'));
   let gameStats = JSON.parse(sessionStorage.getItem('gameStats'));
   foundNotes.push(note)
@@ -19,6 +18,9 @@ function NoteManager(note) {
     console.log('win')
     moveOn(history, '/win');
   } 
+  return(
+  <span></span>
+  )
 }
 
 export default NoteManager;

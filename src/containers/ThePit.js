@@ -8,7 +8,7 @@ import NoteManager from '../components/NoteManager';
 import { useHistory } from 'react-router-dom';
 
 export default function ThePit() {
- // let history = useHistory();
+ let history = useHistory();
 
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
  // const [state, setState] = useState('')
@@ -21,7 +21,7 @@ export default function ThePit() {
 
    function handleClick() {
     ModalNote();
-    NoteManager("pitNote");
+    NoteManager(history, "pitNote");
    // setState('new')
   }
 

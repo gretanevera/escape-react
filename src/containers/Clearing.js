@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom';
 
 export default function Clearing() {
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
- // let history = useHistory();
+ let history = useHistory();
 
   const [state, setState] = useState('')
 
@@ -21,8 +21,8 @@ export default function Clearing() {
 
    function handleClick() {
     ModalNote();
-    NoteManager("clearingNote");
-    setState('new')
+    NoteManager(history,"clearingNote");
+    
   }
 
 

@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 import GameOver from '../components/GameOver';
 
 export default function Cabin() {
-//  let history = useHistory();
+ let history = useHistory();
 
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
  // const [state, setState] = useState('')
@@ -21,7 +21,7 @@ export default function Cabin() {
 
   function handleClick() {
     ModalNote();
-    NoteManager("cabinNote");
+    NoteManager(history,"cabinNote");
     
   }
 
