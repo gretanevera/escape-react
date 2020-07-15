@@ -1,8 +1,6 @@
 import React from 'react';
 
 export default function LoadGame() {
-    //add savegame that saves params on local storage
-    //load game from storage
-    // forward to the game
-//storage == database
+ 
+    //toDo: updload from database according to game id.  use it to continue the game.
 }

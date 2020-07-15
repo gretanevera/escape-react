@@ -1,0 +1,6 @@
+connect to database
+push highscores, pull highscores
+do the same with loads.
+
+add new atrribute to game stats: last seen. saves the 3 last locations where the player was atrribute
+maybe use this for walking in circles 

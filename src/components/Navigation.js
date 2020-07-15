@@ -28,7 +28,6 @@ export default function Navigation(props) {
 
     
     let history = useHistory();
-    // history.push(route);
 
     return (
         <div className="navigation-box-wrapper">

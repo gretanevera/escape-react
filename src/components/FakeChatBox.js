@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function ChatBot() {
-    //this is where the chatbot will offter his assistance
+    //toDO: create fake chat window to serve as a hint and help output.
 
     return(
             <div className='chatbox-wrapper'>
