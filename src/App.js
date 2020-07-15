@@ -27,37 +27,21 @@ import { useEffect } from 'react';
 
 
 function App() {
-
-let bgImage=Background2
+//ToDo make changeable bgs
+// let bgImage=Background2
     
-    // let gameStats = JSON.parse(sessionStorage.getItem('gameStats'));
-
-    // if (gameStats == null) {
-    //     console.log('new player')
-    //     // bgImage = Background2
-
-
-    // } else {
-    //     console.log('returning player')
-    //     if (gameStats.gameHasBegun == true) {
-    //         // bgImage = Background1
-    //         console.log('true')
-    //     }
-    // }
-
-
-
-    var bgConfig = {
-        backgroundImage: `url(${bgImage})`,
-        backroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        backgroundSize: 'cover'
-    }
+  
+//     var bgConfig = {
+//         backgroundImage: `url(${bgImage})`,
+//         backroundRepeat: 'no-repeat',
+//         backgroundPosition: 'center',
+//         backgroundAttachment: 'fixed',
+//         backgroundSize: 'cover'
+//     }
 
 
     return (
-        <div className="App" style={bgConfig}>
+        <div className="App" >
             <Router>
                 <Switch>
                     <Route exact path="/" component={HomePage} />

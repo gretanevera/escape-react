@@ -12,7 +12,7 @@ function EastForest() {
   }
 
   return (
-    <div>
+    <div className='mainBody'>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia alias cum temporibus facilis reprehenderit cupiditate non sit voluptatem laborum doloremque eos ipsam, natus eum accusamus harum nisi praesentium architecto vero.</p>
 

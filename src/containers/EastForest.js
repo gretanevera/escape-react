@@ -28,7 +28,7 @@ let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
 
   if (foundNotes.includes('eForestNote')) {
     return (
-      <div>
+      <div className='mainBody'>
           
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia alias cum temporibus facilis reprehenderit cupiditate non sit voluptatem laborum doloremque eos ipsam, <span > amet </span>
 natus eum accusamus harum nisi praesentium architecto vero.</p>
@@ -53,7 +53,7 @@ natus eum accusamus harum nisi praesentium architecto vero.</p>
   );
   }else{
     return (
-      <div>
+      <div className='mainBody'>
           
       <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, <span className='glitch' data-text='amet' onClick={handleClick}> amet </span>
        debitis inventore atque dolorum aliquam dolore!</p>

@@ -29,7 +29,7 @@ export default function Clearing() {
 if (foundNotes.includes('clearingNote')) {
   return(
 
-    <div>
+    <div className='mainBody'>
         <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span > Facere </span>, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, debitis inventore atque dolorum aliquam dolore!</p>
     
         <Navigation
@@ -54,7 +54,7 @@ if (foundNotes.includes('clearingNote')) {
 } else {
   return(
 
-    <div>
+    <div className='mainBody'>
         <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span className='glitch' data-text='Facere' onClick={handleClick}> Facere </span>, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, debitis inventore atque dolorum aliquam dolore!</p>
     
         <Navigation

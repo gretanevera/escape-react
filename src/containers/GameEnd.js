@@ -5,7 +5,7 @@ import HomePage from './Home'
 function GameEnd() {
     
     return (
-        <div>
+        <div className='mainBody'>
             <Link to="/" component={HomePage}>            Game over
 </Link>
         </div>

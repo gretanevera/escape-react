@@ -31,7 +31,7 @@ function handleWin() {
 }
   if (foundNotes.includes('testNote')) {
     return (
-      <div className='content-wrappper'>
+      <div  className='mainBody'>
         Test Facility 7
         <p>Lorem ipsum dolor sit <span > amet </span> consectetur, adipisicing elit. Facere architecto beatae accusamus error incidunt, dolorum enim, a commodi, saepe ut aliquam consequuntur hic sapiente porro blanditiis earum vero. Earum, beatae!</p>
 
@@ -60,14 +60,12 @@ function handleWin() {
   } else {
     return (
 
-      <div className='content-wrappper'>
-        Test Facility 7
+      <div  className='mainBody'>
+       <h1> Test Facility 7</h1>
         <p>Lorem ipsum dolor sit <span className='glitch' data-text='amet' onClick={handleClick}> amet </span>
             consectetur, adipisicing elit. Facere architecto beatae accusamus error incidunt, dolorum enim, a commodi, saepe ut aliquam consequuntur hic sapiente porro blanditiis earum vero. Earum, beatae!</p>
 
-        <h2>we are going to test the the pause on the timer</h2>
-        <button onClick={handleWin}>Win</button>
-
+      
         <Navigation
           northEast="/tree" northEastEvents="auto"
           northCenter="" northCenterEvents="none"
