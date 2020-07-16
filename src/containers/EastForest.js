@@ -14,8 +14,8 @@ let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
 // const [state, setState] = useState('')
 
  if (performance.navigation.type === 1) {
-   GameOver(0, ' You turned around') //refreshed page
- }
+  GameOver(0, ' You turned around', history) //refreshed page
+}
 
 
 

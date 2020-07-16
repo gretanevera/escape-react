@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect, useHistory } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import './App.css';
 import "./styles/modal.css";
@@ -19,13 +19,12 @@ import WestForest from './containers/WestForest';
 import AboutPage from './containers/About';
 import GameEnd from './containers/GameEnd';
 import GameWin from './containers/GameWin';
-import { useState } from 'react';
 
 
 
 function App() {
 
-    let currentGameStats = JSON.parse(sessionStorage.getItem('gameStats'))
+  //  let currentGameStats = JSON.parse(sessionStorage.getItem('gameStats'))
 
     //ToDo Finish timer
 

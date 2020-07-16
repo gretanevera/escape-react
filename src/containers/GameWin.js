@@ -3,7 +3,7 @@ import React from 'react';
 
 
 function GameWin() {
-    let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))
+    // let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))
 
 
      return (

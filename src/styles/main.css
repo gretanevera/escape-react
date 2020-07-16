@@ -65,6 +65,14 @@ h2 {
   font-family: 'slender';
 }
 
+.game-over-text {
+  text-decoration: none;
+  border: none;
+  background: none;
+  outline: 0;
+  color: whitesmoke;
+}
+
 .important-text {
   color: red;
 }
@@ -102,6 +110,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  white-space: nowrap;
 }
 
 .menu-button-start {
@@ -120,6 +129,28 @@ h2 {
   transition: ease-in color 0.5s;
   color: #c40e0e;
   /* animation: glitch 3s infinite alternate-reverse; */
+}
+
+.content-wrapper-game-over {
+  width: 50vw;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-wrapper-game-over h1 {
+  font-size: 50px;
 }
 
 .notification-text {

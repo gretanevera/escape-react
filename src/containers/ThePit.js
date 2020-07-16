@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ModalNote from '../components/ModalNotes';
 import ModalContent from '../components/ModalContent';
 import note7 from '../media/img/note7.png';
@@ -14,7 +14,7 @@ export default function ThePit() {
  // const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around') //refreshed page
+    GameOver(0, ' You turned around', history) //refreshed page
   }
 
 

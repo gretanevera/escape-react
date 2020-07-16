@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Navigation from '../components/Navigation'
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
@@ -11,10 +11,9 @@ export default function Clearing() {
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
  let history = useHistory();
 
-  const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around') //refreshed page
+    GameOver(0, ' You turned around', history) //refreshed page
   }
 
 

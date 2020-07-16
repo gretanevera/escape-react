@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navigation from "../components/Navigation";
 import ModalNote from '../components/ModalNotes';
 import note6 from '../media/img/note6.png';
@@ -15,7 +15,7 @@ export default function TestSite7() {
   //const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around') //refreshed page
+    GameOver(0, ' You turned around', history) //refreshed page
   }
 
 

@@ -1,4 +1,3 @@
-import NoteManager from "./NoteManager";
 
 export default function ModalNote() {
     //make a link not clickable again

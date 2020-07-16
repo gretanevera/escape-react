@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navigation from '../components/Navigation';
 import NoteManager from '../components/NoteManager';
 import ModalNote from '../components/ModalNotes';
@@ -15,7 +15,7 @@ export default function Cabin() {
  // const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around') //refreshed page
+    GameOver(0, ' You turned around', history) //refreshed page
   }
 
 

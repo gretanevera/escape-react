@@ -1,6 +1,4 @@
 import MoveOn from '../components/MoveOn'
-import Timer from './Timer';
-
 export default function NewGame(history) {
 
   let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))

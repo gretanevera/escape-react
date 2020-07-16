@@ -1,14 +1,14 @@
 import React from 'react';
 import Navigation from '../components/Navigation'
 import GameOver from '../components/GameOver';
-import NoteManager from '../components/NoteManager';
 import { useHistory } from 'react-router-dom';
 
 function EastForest() {
+  let history = useHistory();
 
 
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around') //refreshed page
+    GameOver(0, ' You turned around', history) //refreshed page
   }
 
   return (

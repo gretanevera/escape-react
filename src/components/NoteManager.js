@@ -13,7 +13,7 @@ function NoteManager(history, note) {
   let test = JSON.parse(sessionStorage.getItem('foundNotes'));
   console.log(test)
 
-  if (foundNotes.length == 8) {
+  if (foundNotes.length === 8) {
     console.log('win')
     moveOn(history, '/win');
   } 

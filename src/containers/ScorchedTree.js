@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ModalNote from '../components/ModalNotes';
 import ModalContent from '../components/ModalContent';
 import note5 from '../media/img/note5.png';
@@ -15,7 +15,7 @@ export default function ScorchedTree() {
 //  const [state, setState] = useState('')
 
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around') //refreshed page
+    GameOver(0, ' You turned around', history) //refreshed page
   }
 
 

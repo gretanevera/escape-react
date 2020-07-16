@@ -48,7 +48,13 @@ h2{
     font-family: 'slender';
 }
 
-
+.game-over-text{
+    text-decoration: none;
+    border: none;
+    background: none;
+    outline:0;
+    color: whitesmoke;
+}
 .important-text{
     color: red;
 }
@@ -76,6 +82,7 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    white-space: nowrap;
 }
 
 .menu-button-start {
@@ -99,27 +106,20 @@ h2{
     /* animation: glitch 3s infinite alternate-reverse; */
 }
 
-
-// .chatbox-wrapper {
-//     border: white solid 2px;
-//     width: 20%;
-//     border-top-left-radius: 6px;
-//     border-top-right-radius: 6px;
-//     font-size: 12px;
-// }
-// .chatbox-upper-lip {
-//     background-color: grey;
-//     color: black;
-//     height: 25px;
-// }
-// .chatbox-feed{
-// height: 20vh;
-// background-color: lightgray;
-// color: black;
-// }
-// .chatbox-bottom-lip{
-//     background-color: grey;
-// }
+.content-wrapper-game-over{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font-size: 50px;
+    }
+    h2:last-child{
+        font-size: 40px;
+    }
+}
 
 .notification-text{
     font-size: 10px
