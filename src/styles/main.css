@@ -53,6 +53,20 @@ h1 {
 
 p {
   font-size: 25px;
+  font-family: 'slender';
+  line-height: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: 'slender';
+}
+
+.important-text {
+  color: red;
 }
 
 .menu-button-start:focus {

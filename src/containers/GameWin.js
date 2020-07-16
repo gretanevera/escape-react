@@ -11,7 +11,7 @@ function GameWin() {
             <h1>You escaped</h1>
             <h2>You have left your mark...and found all the notes....</h2>
 
-           {/* toDo: show all the hoes found */}
+           {/* toDo: show all the notes found */}
 
 
         </div>

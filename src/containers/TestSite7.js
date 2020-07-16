@@ -6,7 +6,6 @@ import ModalContent from '../components/ModalContent';
 import GameOver from '../components/GameOver';
 import NoteManager from '../components/NoteManager';
 import { useHistory } from 'react-router-dom';
-
 import MoveOn from '../components/MoveOn'
 
 export default function TestSite7() {
@@ -37,7 +36,6 @@ function handleWin() {
 
         <h2>we are going to test the win</h2>
           <button onClick={handleWin}>Win</button>
-
         <Navigation
           northEast="/tree" northEastEvents="auto"
           northCenter="" northCenterEvents="none"
@@ -62,9 +60,11 @@ function handleWin() {
 
       <div  className='mainBody'>
        <h1> Test Facility 7</h1>
+
+       
         <p>Lorem ipsum dolor sit <span className='glitch' data-text='amet' onClick={handleClick}> amet </span>
             consectetur, adipisicing elit. Facere architecto beatae accusamus error incidunt, dolorum enim, a commodi, saepe ut aliquam consequuntur hic sapiente porro blanditiis earum vero. Earum, beatae!</p>
-
+            <button onClick={handleWin}>Win</button>
       
         <Navigation
           northEast="/tree" northEastEvents="auto"

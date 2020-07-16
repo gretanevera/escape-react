@@ -19,25 +19,33 @@ import WestForest from './containers/WestForest';
 import AboutPage from './containers/About';
 import GameEnd from './containers/GameEnd';
 import GameWin from './containers/GameWin';
-import Background1 from './media/img/glitchForestWithSlendy.gif';
-import Background2 from './media/img/forest.jpg';
 import { useState } from 'react';
-import { useEffect } from 'react';
 
 
 
 function App() {
-//ToDo make changeable bgs
-// let bgImage=Background2
+
+    let currentGameStats = JSON.parse(sessionStorage.getItem('gameStats'))
+
+    //ToDo Finish timer
+
+   
+
+
+
+
     
-  
-//     var bgConfig = {
-//         backgroundImage: `url(${bgImage})`,
-//         backroundRepeat: 'no-repeat',
-//         backgroundPosition: 'center',
-//         backgroundAttachment: 'fixed',
-//         backgroundSize: 'cover'
-//     }
+    //ToDo make changeable bgs
+    // let bgImage=Background2
+
+
+    //     var bgConfig = {
+    //         backgroundImage: `url(${bgImage})`,
+    //         backroundRepeat: 'no-repeat',
+    //         backgroundPosition: 'center',
+    //         backgroundAttachment: 'fixed',
+    //         backgroundSize: 'cover'
+    //     }
 
 
     return (

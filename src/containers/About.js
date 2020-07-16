@@ -14,7 +14,12 @@ export default function AboutPage() {
       <h1>What are you doing here?</h1>
       <div id='typedTextWrap' >
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus corporis voluptatibus porro optio autem dolore rem a quisquam. Aliquid cum sint neque odio dolorum velit tenetur et voluptatem molestias.</p>
+        <p>You should not be here</p>
+        <p>This game is incomplete... and very, VERY wrong</p>
+        <p>To finish it you must collect pages like in a real slenderman game. </p>
+        <p>If you loose, you loose in real life too </p>
+        <p>be carefull...</p>
+        <p className='glitch important-text' data-text='the clock is already ticking'>the clock is already ticking</p>
       </div>
 
 

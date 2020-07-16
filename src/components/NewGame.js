@@ -1,4 +1,5 @@
 import MoveOn from '../components/MoveOn'
+import Timer from './Timer';
 
 export default function NewGame(history) {
 
@@ -14,6 +15,7 @@ export default function NewGame(history) {
 
   sessionStorage.setItem('gameStats', JSON.stringify(gameStats))
   sessionStorage.setItem('foundNotes', JSON.stringify(foundNotes))
+
   MoveOn(history, "/about");
 
 
