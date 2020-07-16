@@ -12,10 +12,10 @@ export default function ScorchedTree() {
  let history = useHistory();
 
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
-//  const [state, setState] = useState('')
+  let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))
 
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around', history) //refreshed page
+    GameOver(gameStats.notesFound, ' You were walking in circles', history) //refreshed page
   }
 
 

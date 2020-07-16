@@ -1,14 +1,8 @@
 //import { useHistory } from 'react-router-dom';
 
 export default function MoveOn(history, route) {
-    // let history = useHistory();
+  history.push(route);
 
-console.log('route initiated')
-history.push(route);
-
-    // window.location.href = route;
-    // console.log('routing to ' + route)
-  
 }
 
 

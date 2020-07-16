@@ -9,73 +9,73 @@ import { useHistory } from 'react-router-dom';
 
 export default function Clearing() {
   let foundNotes = JSON.parse(sessionStorage.getItem('foundNotes'));
- let history = useHistory();
-
+  let history = useHistory();
+  let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))
 
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around', history) //refreshed page
+    GameOver(gameStats.notesFound, ' You were walking in circles', history) //refreshed page
   }
 
 
 
-   function handleClick() {
+  function handleClick() {
     ModalNote();
-    NoteManager(history,"clearingNote");
-    
+    NoteManager(history, "clearingNote");
+
   }
 
 
-if (foundNotes.includes('clearingNote')) {
-  return(
+  if (foundNotes.includes('clearingNote')) {
+    return (
 
-    <div className='mainBody'>
+      <div className='mainBody'>
         <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span > Facere </span>, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, debitis inventore atque dolorum aliquam dolore!</p>
-    
+
         <Navigation
-            northEast=""                northEastEvents="none"
-            northCenter=""                   northCenterEvents="none"
-            northWest="/thickets"            northWestEvents="auto"
-            centerEast="/testsite"                    centerEastEvents="auto"
-            centerWest=""          centerWestEvents="none"
-            southEast="/cabin"                southEastEvents="auto"
-            southCenter=""              southCenterEvents="none"
-            southWest="/westforest"               southWestEvents="auto"
-        
-          />
-    
-          <ModalContent image={note3}/>
-    </div>
-    
-    
-        );
+          northEast="" northEastEvents="none"
+          northCenter="" northCenterEvents="none"
+          northWest="/thickets" northWestEvents="auto"
+          centerEast="/testsite" centerEastEvents="auto"
+          centerWest="" centerWestEvents="none"
+          southEast="/cabin" southEastEvents="auto"
+          southCenter="" southCenterEvents="none"
+          southWest="/westforest" southWestEvents="auto"
+
+        />
+
+        <ModalContent image={note3} />
+      </div>
 
 
-} else {
-  return(
+    );
 
-    <div className='mainBody'>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span className='glitch' data-text='Facere' onClick={handleClick}> Facere </span>, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, debitis inventore atque dolorum aliquam dolore!</p>
-    
+
+  } else {
+    return (
+
+      <div className='mainBody'>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span className='glitch' data-text='amet' onClick={handleClick}> amet </span>, ab hic odit temporibus saepe nisi neque in impedit iusto a consequatur ipsa quod inventore ratione. Ipsam tenetur consequuntur unde odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet magnam, incidunt delectus totam hic placeat unde molestiae, accusamus ipsam quas fugit nam corrupti, debitis inventore atque dolorum aliquam dolore!</p>
+
         <Navigation
-            northEast=""                northEastEvents="none"
-            northCenter=""                   northCenterEvents="none"
-            northWest="/thickets"            northWestEvents="auto"
-            centerEast="/testsite"                    centerEastEvents="auto"
-            centerWest=""          centerWestEvents="none"
-            southEast="/cabin"                southEastEvents="auto"
-            southCenter=""              southCenterEvents="none"
-            southWest="/westforest"               southWestEvents="auto"
-        
-          />
-    
-          <ModalContent image={note3}/>
-    </div>
-    
-    
-        );
-}
+          northEast="" northEastEvents="none"
+          northCenter="" northCenterEvents="none"
+          northWest="/thickets" northWestEvents="auto"
+          centerEast="/testsite" centerEastEvents="auto"
+          centerWest="" centerWestEvents="none"
+          southEast="/cabin" southEastEvents="auto"
+          southCenter="" southCenterEvents="none"
+          southWest="/westforest" southWestEvents="auto"
+
+        />
+
+        <ModalContent image={note3} />
+      </div>
+
+
+    );
+  }
 
 
 
-   
+
 }

@@ -17,7 +17,7 @@ export default function AboutPage() {
         <p>To finish it you must collect pages like in a real slenderman game. </p>
         <p>If you loose, you loose in real life too </p>
         <p>be carefull...</p>
-        <p className='glitch important-text' data-text='the clock is already ticking'>the clock is already ticking</p>
+        <p className='glitchOg important-text' data-text='the clock is already ticking'>the clock is already ticking</p>
       </div>
 
 

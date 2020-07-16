@@ -8,7 +8,8 @@ export default function NewGame(history) {
     "notesFound": 0,
     "score": 0,
     "deathClock": 9999,
-    "gameHasBegun": true
+    "gameHasBegun": true,
+    "COD":"none"
   };
 
   sessionStorage.setItem('gameStats', JSON.stringify(gameStats))

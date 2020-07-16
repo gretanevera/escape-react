@@ -6,8 +6,9 @@ import { useHistory } from 'react-router-dom';
 export default function ToyPile() {
   let history = useHistory();
 
+  // let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))
   if (performance.navigation.type === 1) {
-    GameOver(0, ' You turned around', history) //refreshed page
+    // GameOver(gameStats.notesFound, ' You were walking in circles', history) //refreshed page
   }
 
   //change the background to not glitchy

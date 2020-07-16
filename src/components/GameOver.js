@@ -3,6 +3,10 @@ import moveOn from './MoveOn';
 
 
 export default function GameOver(notesFound, causeOfDeath, history) {
-    console.log('Game over. Cause of death: ' + causeOfDeath +'. You have collected ' + notesFound+ 'pages.')
-    moveOn(history,"/over")
+
+    let gameStats = JSON.parse(sessionStorage.getItem('gameStats'))
+    gameStats.COD = causeOfDeath
+    sessionStorage.setItem('gameStats', JSON.stringify(gameStats))
+    console.log('Game over. Cause of death: ' + causeOfDeath + '. You have collected ' + notesFound + 'pages.')
+    moveOn(history, "/over")
 }

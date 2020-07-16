@@ -10,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 .mainBody{
     display: flex;
@@ -18,6 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10%;
+    width: 80vw;
 }
 h1 {
     text-align: center;
@@ -107,7 +109,7 @@ h2{
 }
 
 .content-wrapper-game-over{
-    width: 50vw;
+   
     height: 80vh;
     display: flex;
     align-items: center;
@@ -122,8 +124,12 @@ h2{
 }
 
 .notification-text{
-    font-size: 10px
+    font-size: 15px
 }
 #note{
     pointer-events: auto;
+}
+.mini-galery-wrap img{
+    height: 100px;
+    margin: 5px;
 }

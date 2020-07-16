@@ -34,6 +34,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10%;
+  width: 80vw;
 }
 
 h1 {
@@ -132,7 +133,6 @@ h2 {
 }
 
 .content-wrapper-game-over {
-  width: 50vw;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,11 +153,20 @@ h2 {
   font-size: 50px;
 }
 
+.content-wrapper-game-over h2:last-child {
+  font-size: 40px;
+}
+
 .notification-text {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 #note {
   pointer-events: auto;
+}
+
+.mini-galery-wrap img {
+  height: 100px;
+  margin: 5px;
 }
 /*# sourceMappingURL=main.css.map */

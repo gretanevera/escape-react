@@ -5,7 +5,7 @@ import './App.css';
 import "./styles/modal.css";
 import "./styles/navigation.css";
 import './styles/glitch.css';
-
+import './styles/glitchNoHover.css';
 import HomePage from './containers/Home';
 import Cabin from './containers/Cabin';
 import Clearing from './containers/Clearing';
