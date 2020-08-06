@@ -1,6 +1,15 @@
 connect to database
 push highscores, pull highscores
-do the same with loads.
+do the same with loads. for now Load is saved on players local storage
 
-add new atrribute to game stats: last seen. saves the 3 last locations where the player was atrribute
-maybe use this for walking in circles 
+add new atrribute to game stats: last seen. saves the 3 last locations where the player was. usefull for Walking in circles
+add new fields: game update logs in the front page
+add new game mech: working with console
+add new game mech: logging keys in specific areas
+add new game mech: catching multiple clicks in a specific are  (i.e. press the word 6 time to reveal a clue)
+add a fake chat window: this will lead the player through a game. For future add posibility to low-key interact with the "admin"
+
+add cookie GDPR
+
+
+deal with timer problems - fix death due to being caught
